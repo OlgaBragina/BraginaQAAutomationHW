@@ -1,7 +1,6 @@
 package site;
 
-import org.junit.Before;
-import org.junit.jupiter.api.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
