@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AdminFunctionalTest">
+    <test name="Create registration link ">
+        <classes>
+            <class name="CreateNewRestaurant.CreateLink"/>
+            <class name="CreateNewRestaurant.FillRegistrationForm"> <!--run only two TEST methods-->
+                <methods>
+                    <include name="precondition"/> <!--is NOT test method! -->
+                    <include name="testDataProvider"/> <!--/is NOT test method! -->
+                   <include name="fillForm"/> <!--is my first test method -->
+                   <include name="method1"/> <!--is my second test method -->
+               </methods>
+           </class>
+       </classes>
+   </test>
+</suite>
